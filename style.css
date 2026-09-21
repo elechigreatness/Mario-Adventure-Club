@@ -35,3 +35,10 @@ nav {
     top: 9px;
     z-index: 999;
 }
+nav ul {
+list-style: none;
+display: flex;
+justify-content: space-around;
+max-width: 900px;
+margin: 0 auto;
+}
