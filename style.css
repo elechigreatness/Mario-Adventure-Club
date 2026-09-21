@@ -26,3 +26,12 @@ header {
     font-size:clamp(16px, 3VW, 24px) ;
     font-weight: bold;
 }
+
+/* NAV */
+nav {
+    background: #6b6b6b;
+    padding: 12px 0;
+    position: sticky;
+    top: 9px;
+    z-index: 999;
+}
