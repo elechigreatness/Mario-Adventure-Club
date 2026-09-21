@@ -96,6 +96,10 @@ nav a.active, nav a:hover {
 .friend-card:hover {
     /* transform: translateY(-5px); */
 }
+.friend-card h3 {
+    color: red;
+    margin: 12px 0;
+}
 .friend-card p {
     text-align: center;
     font-size: 14px;
