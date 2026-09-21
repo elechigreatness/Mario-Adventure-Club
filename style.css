@@ -118,3 +118,12 @@ nav a.active, nav a:hover {
     border-radius: 10px;
     border: 2px solid #ddd;
 }
+
+/* CONTACT PAGE */
+#contact-page {
+    background: #ffcc00;
+    min-height: 80vh;
+    padding: 40PX 5%;
+    display: flex;
+    align-items: center;
+}
