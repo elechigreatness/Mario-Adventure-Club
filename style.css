@@ -62,5 +62,10 @@ nav a.active, nav a:hover {
 .banner img {
     width: 100%;
     margin-top: 122px;
-
+}
+/* CONTENT */
+content {
+    padding: 20px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
