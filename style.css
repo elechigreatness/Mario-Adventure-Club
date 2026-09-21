@@ -79,3 +79,9 @@ nav a.active, nav a:hover {
     margin-bottom: 15px;
     font-size: 15px; 
 }
+/* FRIENDS PAGE */
+.friend-card {
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
