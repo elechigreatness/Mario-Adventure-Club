@@ -17,3 +17,12 @@ header {
     top: 0;
     z-index: 1000;
 }
+.logo {
+    display: inline-block;
+    color: white;
+    border: 3px solid white;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size:clamp(16px, 3VW, 24px) ;
+    font-weight: bold;
+}
