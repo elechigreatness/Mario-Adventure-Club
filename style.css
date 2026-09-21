@@ -148,3 +148,10 @@ flex-wrap: wrap;
     gap: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
 }
+.form-box input, .form-box textarea {
+padding: 10px;
+border: 1px solid #999;
+border-radius: 5px;
+width: 100%;
+font-size: 14px;
+}
