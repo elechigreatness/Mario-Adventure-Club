@@ -29,6 +29,7 @@ header {
     border-radius: 30px;
     font-size: clamp(16px, 3VW, 24px) ;
     font-weight: bold;
+    font-size: 25px;
 }
 
 /* NAV */
@@ -49,7 +50,7 @@ justify-content: space-around;
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 17px;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -72,12 +73,13 @@ nav a.active, nav a:hover {
 .content h2 {
     color: red;
     text-align: center;
-    font-size: clamp(22px, 4VW, 32px) ;
+    font-size: clamp(27px, 4VW, 32px) ;
 }
 .content p {
     line-height: 1.8;
     margin-bottom: 15px;
-    font-size: 15px; 
+    font-size: 18px; 
+    align-items:center ;
 }
 /* FRIENDS PAGE */
 .friend-grid{
@@ -92,6 +94,7 @@ nav a.active, nav a:hover {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
+    margin: 20px 0;
 }
 .friend-card:hover {
     /* transform: translateY(-5px); */
@@ -99,10 +102,11 @@ nav a.active, nav a:hover {
 .friend-card h3 {
     color: red;
     margin: 12px 0;
+    font-size: 30px;
 }
 .friend-card p {
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 /* GALLERY PAGE */
@@ -110,6 +114,9 @@ nav a.active, nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
+}
+.first-grid-image {
+    margin-top: 120px;
 }
 .gallery-grid img {
     width: 100%;
@@ -121,16 +128,21 @@ nav a.active, nav a:hover {
 
 /* CONTACT PAGE */
 #contact-page {
-    background: #ffcc00;
-    min-height: 80vh;
-    padding: 40PX 5%;
+    /* background: #ffcc00; */
+    background-image: url(img/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: fit-content;
+    padding: 30px 5%;
     display: flex;
     align-items: center;
+    padding-top: 30px;
 }
 .contact-wrapper {
 display: flex;
 justify-content: space-between;
-align-items: center;
+align-items: flex-start;
 max-width: 1100px;
 margin: 0 auto;
 width: 100%;
@@ -146,7 +158,8 @@ flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 130px;
 }
 .form-box input, .form-box textarea {
 padding: 10px;
@@ -181,22 +194,123 @@ footer {
     color: white;
     text-align: center;
     padding: 18px 0;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 /* MOBILE */
-@media(max-width: 600px) {
-    nav ul {
-        gap: 5px;
-            }
-        nav a {
-            font-size: 12px;
-            padding: 4px 6px;
+@media(min-width: 992px) and (max-width: 1399px){
+    .logo {
+        font-size: 40px;
+    }
+    nav {
+            font-size: 40px;
         }
-        .contact-wrapper {
-            justify-content: center;
+    nav a {
+            font-size: 25px;
         }
-        .contact-image {
-            order: -1;
+    .content h2 {
+        font-size: 50px;
+    }
+    .content p {
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    footer {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .friend-card {
+        margin: 30px 0;
+    }
+
+    .first-grid-image {
+    margin-top: 3px;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 120px;
+    }
+
+    #contact-page {
+    background-color: #ffcc00;
+    }
+    .form-box {
+        margin-top: 250px;
+    }
+    .submit-btn {
+        font-size: 20px;
+    }
+    .submit-btn:hover {
+        background-color: lightcoral;
+        opacity: 0.8;
+        color: red;
+
+        transition: color 1s;
+        
+    }
+    .form-box {
+        margin-bottom: 250px;
+    }
+}
+
+/* TABLET */
+@media(min-width: 573px) and (max-width: 991px){
+    .logo {
+        font-size: 40px;
+    }
+    nav {
+            font-size: 30px;
         }
+    nav a {
+            font-size: 20px;
+        }
+    .content h2 {
+        font-size: 35px;
+    }
+    .content p {
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    footer {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .friend-card {
+        margin: 30px 0;
+    }
+
+    .first-grid-image {
+    margin-top: 3px;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 120px;
+    }
+
+    #contact-page {
+    background-color: #ffcc00;
+    }
+    .form-box {
+        margin-top: 250px;
+    }
+    .submit-btn {
+        font-size: 20px;
+    }
+    .submit-btn:hover {
+        background-color: lightcoral;
+        opacity: 0.8;
+        color: red;
+
+        transition: color 1s;
+        
+    }
+    .form-box {
+        margin-bottom: 250px;
+    }
 }
