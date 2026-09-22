@@ -130,9 +130,9 @@ nav a.active, nav a:hover {
 #contact-page {
     /* background: #ffcc00; */
     background-image: url(img/banner.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     min-height: fit-content;
     padding: 30px 5%;
     display: flex;
@@ -154,7 +154,7 @@ flex-wrap: wrap;
     padding: 25px;
     border-radius: 12px;
     width: 100%;
-    max-width: 380px;
+    /* max-width: 380px; */
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -197,7 +197,7 @@ footer {
     font-size: 20px;
 }
 
-/* MOBILE */
+/* lARGE SCREEN */
 @media(min-width: 992px) and (max-width: 1399px){
     .logo {
         font-size: 40px;
@@ -238,7 +238,8 @@ footer {
     background-color: #ffcc00;
     }
     .form-box {
-        margin-top: 250px;
+        margin-top: 200px;
+        max-width: 400px;
     }
     .submit-btn {
         font-size: 20px;
@@ -251,10 +252,7 @@ footer {
         transition: color 1s;
         
     }
-    .form-box {
-        margin-bottom: 250px;
-    }
-}
+    
 
 /* TABLET */
 @media(min-width: 573px) and (max-width: 991px){
