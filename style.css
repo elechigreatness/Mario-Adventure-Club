@@ -174,3 +174,29 @@ font-size: 14px;
     max-width: 400px;
     height: auto;
 }
+
+/* Footer */
+footer {
+    background: #6b6b6b;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 13px;
+}
+
+/* MOBILE */
+@media(max-width: 600px) {
+    nav ul {
+        gap: 5px;
+            }
+        nav a {
+            font-size: 12px;
+            padding: 4px 6px;
+        }
+        .contact-wrapper {
+            justify-content: center;
+        }
+        .contact-image {
+            order: -1;
+        }
+}
