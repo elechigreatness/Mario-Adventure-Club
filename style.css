@@ -159,3 +159,13 @@ font-size: 14px;
     height: 100px;
     resize: none;
 }
+.submit-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
